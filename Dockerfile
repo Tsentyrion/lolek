@@ -1,7 +1,7 @@
 FROM nginx:latest
 
-ADD . /usr/share/nginx/html/lolek
-WORKDIR /usr/share/nginx/html/lolek
+ADD . /usr/share/nginx/html
+WORKDIR /usr/share/nginx/html
 RUN cat .env>version.html
 RUN echo $(date)>>version.html
 
